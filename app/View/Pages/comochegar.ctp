@@ -1,0 +1,4 @@
+<h1>Como Chegar</h1>
+<hr></hr>
+Veja abaixo no mapa como chegar ao evento!<p></p>
+<p align='center'><iframe width="640" height="480" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com.br/maps?q=hotel+mercure+bh&amp;ie=UTF8&amp;hq=hotel+mercure+bh&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=14411360011567410249&amp;ll=-19.931355,-43.943853&amp;spn=0.019365,0.027466&amp;z=15&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com.br/maps?q=hotel+mercure+bh&amp;ie=UTF8&amp;hq=hotel+mercure+bh&amp;hnear=&amp;radius=15000&amp;t=m&amp;cid=14411360011567410249&amp;ll=-19.931355,-43.943853&amp;spn=0.019365,0.027466&amp;z=15&amp;iwloc=A&amp;source=embed" style="color:#0000FF;text-align:left">Exibir mapa ampliado</a></small></p>

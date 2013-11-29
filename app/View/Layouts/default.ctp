@@ -17,7 +17,7 @@
  * @license       http://www.opensource.org/licenses/mit-license.php MIT License
  */
 
-$cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework');
+$cakeDescription = __d('cake_dev', 'Site de eventos!');
 ?>
 <!DOCTYPE html>
 <html>
@@ -30,7 +30,7 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	<?php
 		echo $this->Html->meta('icon');
 
-		echo $this->Html->css('cake.generic');
+		echo $this->Html->css('cake');
 
 		echo $this->fetch('meta');
 		echo $this->fetch('css');
@@ -38,25 +38,32 @@ $cakeDescription = __d('cake_dev', 'CakePHP: the rapid development php framework
 	?>
 </head>
 <body>
+
 	<div id="container">
 		<div id="header">
-			<h1><?php echo $this->Html->link($cakeDescription, 'http://cakephp.org'); ?></h1>
+			<div id="menu">
+                        <?php echo $this->element('menu');?>
+                    </div>
+                    <div id="contato">
+                        <?php echo $this->element('contato');?> 
 		</div>
+		</div>
+            
 		<div id="content">
-
+                    
 			<?php echo $this->Session->flash(); ?>
 
 			<?php echo $this->fetch('content'); ?>
+                    
+                    </div>
+                   <div id="palestras">
+                        <?php echo $this->element('palestras');?> 
 		</div>
 		<div id="footer">
-			<?php echo $this->Html->link(
-					$this->Html->image('cake.power.gif', array('alt' => $cakeDescription, 'border' => '0')),
-					'http://www.cakephp.org/',
-					array('target' => '_blank', 'escape' => false)
-				);
-			?>
+                    <p>Todos os direitos reservados 2013</p>
 		</div>
 	</div>
-	<?php echo $this->element('sql_dump'); ?>
+
+
 </body>
 </html>

@@ -148,7 +148,7 @@ th {
 	padding:4px;
 }
 th a {
-	display: block;
+	display: inline-table;
 	padding: 2px 4px;
 	text-decoration: none;
 }
@@ -739,4 +739,80 @@ pre {
 /** Elements **/
 #url-rewriting-warning {
 	display:none;
+}
+ul#nav{
+	margin: 0;
+	padding: 0;
+	width: 350px; /* Width of Menu Items */
+	background: #fff; /* IE6 Bug */
+	font-size: 100%;
+	margin-bottom:10px;
+	}
+	/***********sub menu***********/
+ul#nav ul {
+	margin: 0;
+	padding: 0;
+	width: 380px; /* Width of Menu Items */
+
+	background: #fff; /* IE6 Bug */
+	font-size: 100%;
+	margin-bottom:50px;
+	}
+
+ul#nav li {
+	position: relative;
+	list-style: none;
+	}
+
+ul#nav li a {
+	display: inline;
+	text-decoration: none;
+	color: #777;
+	padding: 5px;
+	border-bottom: 0;
+	
+	}
+
+/* Fix IE. Hide from IE Mac \
+* html ul#nav li { float: left; height: 1%; }
+* html ul#nav li a { height: 1%; }
+/* End */
+
+ul#nav ul {
+	position: absolute;
+	display: inline;
+	left: 149px; /* Set 1px less than menu width */
+	top: 0;
+	}
+/* Sub Menu Styles */
+ul#nav li ul li a {
+    padding: 2px 5px;
+    min-height: 24px;/*altura do submenu*/
+}
+
+ul#nav li:hover ul ul,
+ul#nav li:hover ul ul ul,
+ul#nav li.over ul ul,
+ul#nav li.over ul ul ul {
+	display: inline;
+	margin-left: 30px;/*distancia dos submenus do menu*/
+} /* Hide sub-menus initially */
+
+ul#nav li:hover ul,
+ul#nav li li:hover ul,
+ul#nav li li li:hover ul,
+ul#nav li.over ul,
+ul#nav li li.over ul,
+ul#nav li li li.over ul { display: inline;} /* The magic */
+
+ul#nav li.menuparent { background: transparent url(../app/webroot/img/seta.gif) right center no-repeat; }
+
+ul#nav li.menuparent:hover,
+ul#nav li.over { color: #20baed/*color: #FFFFFF*/;}
+
+ul#nav li a:hover { color: #FFFFFF/*#06C*/; font-weight: bold; }/* cor do link*/
+ul#nav li a:hover { background-color: #20baed; font-weight: bold; }/* cor do link*/
+.menu{
+    width: 100%;
+    border: 1px solid red;
 }
